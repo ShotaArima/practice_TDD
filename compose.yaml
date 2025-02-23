@@ -1,0 +1,7 @@
+services:
+  python:
+    build: . # このディレクトリにあるDockerfileを参考にコンテナを作ってという意味
+    container_name: PYTHON
+    environment:
+      - PYTHONPATH=/usr/local/python
+    command: pytest tests/
